@@ -21,9 +21,8 @@ public class Board {
     }
 
     public void setMap(int[] ints) {
-        for (int i = 0; i < ints.length - 1; i++) {
+        for (int i = 0; i < ints.length; i+= 2) {
             map[ints[i]][ints[i + 1]] = Ships.ONE;
-            i++;
         }
         for (int x = 0; x < 10; x++) {
             for (int y = 0; y < 10; y++) {
